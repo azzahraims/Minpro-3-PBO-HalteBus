@@ -6,11 +6,11 @@ Az-Zahra Imsawati Sugianto - 2509116062
 
 ## Deskripsi Singkat Program
 
-Sistem Manajemen Halte Bus merupakan program berbasis Java yang digunakan oleh admin untuk mengelola data halte bus. Program ini merupakan pengembangan dari Mini Project 2 dengan menerapkan konsep **polymorphism**, **abstraction**, serta struktur **MVC (Model-View-Controller)**.
+Sistem Manajemen Halte Bus merupakan program berbasis Java yang digunakan oleh admin untuk mengelola data halte bus. Program ini merupakan pengembangan dari Mini Project 2 dengan menerapkan konsep polymorphism, abstraction, serta struktur MVC (Model-View-Controller).
 
-Program menyediakan fitur CRUD (Create, Read, Update, Delete) yang terdiri dari menambah, melihat, mengubah, dan menghapus data halte. Data halte disimpan menggunakan `ArrayList`.
+Program menyediakan fitur CRUD (Create, Read, Update, Delete) yang terdiri dari menambah, melihat, mengubah, dan menghapus data halte. Data halte disimpan menggunakan ArrayList.
 
-Pada program terdapat dua jenis halte, yaitu **Halte Reguler** dan **Halte Transit**. Halte Reguler memiliki data khusus berupa titik tujuan, sedangkan Halte Transit memiliki data khusus berupa rute penghubung.
+Pada program terdapat dua jenis halte, yaitu Halte Reguler dan Halte Transit. Halte Reguler memiliki data khusus berupa titik tujuan, sedangkan Halte Transit memiliki data khusus berupa rute penghubung.
 
 ID halte dibuat secara otomatis oleh sistem dengan urutan H001, H002, H003, dan seterusnya sehingga admin tidak perlu memasukkan ID secara manual.
 
@@ -62,7 +62,7 @@ Pada class `Halte`, atribut `idHalte` juga menggunakan keyword `final`.
 
 ## Penerapan Inheritance
 
-Inheritance diterapkan dengan menjadikan abstract class `Halte` sebagai **superclass**, sedangkan `HalteReguler` dan `HalteTransit` sebagai **subclass**.
+Inheritance diterapkan dengan menjadikan abstract class `Halte` sebagai superclass, sedangkan `HalteReguler` dan `HalteTransit` sebagai subclass.
 
 Class `HalteReguler` dan `HalteTransit` menggunakan `extends Halte` sehingga dapat mewarisi atribut dan method yang dimiliki oleh superclass.
 
@@ -78,7 +78,7 @@ Constructor pada kedua subclass menggunakan `super()` untuk memanggil constructo
 
 ## Penerapan Polymorphism
 
-Polymorphism pada program diterapkan melalui **method overriding** dan **method overloading**.
+Polymorphism pada program diterapkan melalui method overriding dan method overloading.
 
 ### Method Overriding
 
@@ -112,7 +112,7 @@ Kedua method memiliki nama yang sama tetapi menggunakan parameter yang berbeda s
 
 ## Penerapan Abstraction
 
-Abstraction diterapkan dengan menjadikan class `Halte` sebagai **abstract class**.
+Abstraction diterapkan dengan menjadikan class `Halte` sebagai abstract class.
 
 [MASUKKAN SCREENSHOT ABSTRACT CLASS HALTE]
 
