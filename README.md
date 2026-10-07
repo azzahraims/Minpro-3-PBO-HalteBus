@@ -136,11 +136,10 @@ Kedua method memiliki nama yang sama tetapi menggunakan parameter yang berbeda s
 
 Abstraction diterapkan dengan menjadikan class `Halte` sebagai abstract class.
 
-<p align="center">
+
   <img width="344" alt="image" src="https://github.com/user-attachments/assets/bfba3a01-9f46-42cd-984e-7929aa390a06" />
 </p>
 
-<p align="center">
   <img width="272" alt="image" src="https://github.com/user-attachments/assets/3bfd8a96-eb27-460a-998c-e184714ad2f4" />
 </p>
 
@@ -176,7 +175,7 @@ Method `tampilkanInfo()` kemudian dapat digunakan dan di-override kembali oleh `
 
 ### Menu Utama
 
-
+<img width="199" height="131" alt="Screenshot 2026-10-08 005821" src="https://github.com/user-attachments/assets/5169711a-7c74-41f7-8d28-ff66a4eb4897" />
 
 Menu Utama menampilkan lima pilihan yang dapat digunakan admin untuk mengelola data halte, yaitu tambah, lihat, ubah, hapus data halte, serta keluar dari program.
 
@@ -186,36 +185,37 @@ Pada menu Tambah Halte, admin dapat memilih dua jenis halte, yaitu Halte Reguler
 
 #### Halte Reguler
 
-[MASUKKAN SCREENSHOT TAMBAH HALTE REGULER]
+<img width="221" height="179" alt="image" src="https://github.com/user-attachments/assets/317df7c7-87a6-49bc-a66c-281a51ef0ef2" />
 
 Halte Reguler dipilih dengan memasukkan pilihan 1. Admin mengisi nama halte, lokasi, kapasitas, rute bus, serta titik tujuan. ID halte dibuat secara otomatis oleh sistem setelah data berhasil ditambahkan.
 
 #### Halte Transit
 
-[MASUKKAN SCREENSHOT TAMBAH HALTE TRANSIT]
+<img width="235" height="178" alt="image" src="https://github.com/user-attachments/assets/71fc1c64-5455-43f3-9656-2d430fe8172b" />
 
 Halte Transit dipilih dengan memasukkan pilihan 2. Admin mengisi nama halte, lokasi, kapasitas, rute bus, serta rute penghubung. ID halte juga dibuat secara otomatis oleh sistem.
 
 ### Lihat Data Halte
 
-[MASUKKAN SCREENSHOT LIHAT DATA]
+<img width="217" height="346" alt="image" src="https://github.com/user-attachments/assets/f2f7c987-36e8-4ac8-b717-d8508fb03361" />
 
 Menu Lihat Data Halte menampilkan seluruh data halte yang tersimpan di dalam `ArrayList`. Informasi yang ditampilkan menyesuaikan jenis halte, termasuk titik tujuan pada Halte Reguler dan rute penghubung pada Halte Transit.
 
 ### Ubah Data Halte
 
-[MASUKKAN SCREENSHOT UBAH DATA]
+<img width="236" height="236" alt="image" src="https://github.com/user-attachments/assets/faf8b7f5-6bcc-41ab-8ef7-a4648052fd5d" />
 
 Menu Ubah Data Halte digunakan untuk memperbarui data berdasarkan ID halte. Setelah data ditemukan, admin dapat memasukkan data baru untuk memperbarui informasi halte.
 
 ### Hapus Halte
 
-[MASUKKAN SCREENSHOT HAPUS DATA]
+<img width="163" height="73" alt="image" src="https://github.com/user-attachments/assets/dc2e9319-c2ad-4532-98ff-a8aefe49f584" />
 
 Menu Hapus Halte digunakan untuk menghapus data berdasarkan ID halte. Jika data dengan ID tersebut ditemukan, data akan dihapus dari `ArrayList`.
 
 ### Keluar
 
-[MASUKKAN SCREENSHOT KELUAR]
+<img width="325" height="44" alt="image" src="https://github.com/user-attachments/assets/90020c80-fff5-40f5-b37e-55e2fe0da21f" />
+
 
 Menu Keluar digunakan untuk mengakhiri program. Setelah menu dipilih, sistem menampilkan pesan penutup dan program berhenti.
