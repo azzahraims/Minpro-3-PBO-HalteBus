@@ -20,7 +20,9 @@ ID halte dibuat secara otomatis oleh sistem dengan urutan H001, H002, H003, dan 
 
 Program menerapkan struktur MVC dengan memisahkan class ke dalam beberapa package sesuai dengan fungsinya.
 
-[MASUKKAN SCREENSHOT STRUKTUR PACKAGE]
+<p align="center">
+  <img width="220" height="276" alt="image" src="https://github.com/user-attachments/assets/9f448fed-ad31-4170-99c9-707a054d59fc" />
+</p>
 
 - **Model** berisi `Halte`, `HalteReguler`, `HalteTransit`, dan `InformasiHalte`. Package ini digunakan untuk membentuk dan menyimpan struktur data halte.
 - **View** berisi `HalteView` yang digunakan untuk menampilkan menu serta menerima input dari pengguna.
@@ -52,7 +54,16 @@ Encapsulation diterapkan pada class `Halte`, `HalteReguler`, dan `HalteTransit`.
 
 Akses dan perubahan nilai atribut dilakukan melalui method getter dan setter. Setter pada program juga dilengkapi dengan validasi terhadap nilai yang diberikan.
 
-[MASUKKAN SCREENSHOT ENCAPSULATION]
+<table align="center">
+  <tr>
+    <td align="center" valign="middle">
+      <img width="380" alt="image" src="https://github.com/user-attachments/assets/5c3753f1-8975-49d1-b6d2-d576dec49867" />
+    </td>
+    <td align="center" valign="middle">
+      <img width="380" alt="image" src="https://github.com/user-attachments/assets/d325eaaf-8939-459a-9519-bb09f7cfbd14" />
+    </td>
+  </tr>
+</table>
 
 Pada class `Halte`, atribut `idHalte` juga menggunakan keyword `final`.
 
@@ -66,9 +77,20 @@ Inheritance diterapkan dengan menjadikan abstract class `Halte` sebagai supercla
 
 Class `HalteReguler` dan `HalteTransit` menggunakan `extends Halte` sehingga dapat mewarisi atribut dan method yang dimiliki oleh superclass.
 
-[MASUKKAN SCREENSHOT INHERITANCE HALTE REGULER]
-
-[MASUKKAN SCREENSHOT INHERITANCE HALTE TRANSIT]
+<table align="center">
+  <tr>
+    <td align="center"><b>Halte Reguler</b></td>
+    <td align="center"><b>Halte Transit</b></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img width="442" alt="Halte Reguler" src="https://github.com/user-attachments/assets/7010916f-63fa-4999-8c0d-03b4c8e73e92" />
+    </td>
+    <td align="center" valign="middle">
+      <img width="437" alt="Halte Transit" src="https://github.com/user-attachments/assets/0b58dc66-4b8d-42a8-8468-b407e03a5d9c" />
+    </td>
+  </tr>
+</table>
 
 `HalteReguler` memiliki atribut tambahan `titikTujuan`, sedangkan `HalteTransit` memiliki atribut tambahan `rutePenghubung`.
 
@@ -86,11 +108,11 @@ Method overriding diterapkan pada method `tampilkanInfo()` dan `tampilkanJenisHa
 
 Method tersebut diterapkan kembali pada `HalteReguler` dan `HalteTransit` sehingga masing-masing jenis halte dapat menampilkan informasi sesuai dengan karakteristiknya.
 
-[MASUKKAN SCREENSHOT OVERRIDING HALTE REGULER]
+<img width="343" height="153" alt="image" src="https://github.com/user-attachments/assets/ed791b04-e241-48a7-8adc-deb84d18cccc" />
 
 Pada `HalteReguler`, method `tampilkanInfo()` menampilkan informasi tambahan berupa titik tujuan.
 
-[MASUKKAN SCREENSHOT OVERRIDING HALTE TRANSIT]
+<img width="374" height="142" alt="image" src="https://github.com/user-attachments/assets/69e26512-0718-456d-acab-a1f9f0645d31" />
 
 Pada `HalteTransit`, method `tampilkanInfo()` menampilkan informasi tambahan berupa rute penghubung.
 
@@ -100,7 +122,7 @@ Dengan method overriding, pemanggilan method yang sama dapat menghasilkan inform
 
 Method overloading diterapkan pada method `cariHalte()` di dalam `HalteController`.
 
-[MASUKKAN SCREENSHOT DUA METHOD CARI HALTE]
+<img width="404" height="278" alt="image" src="https://github.com/user-attachments/assets/b039a843-e91f-4f06-b07a-93b4d8761db6" />
 
 Method `cariHalte()` pertama menerima satu parameter berupa ID halte dan digunakan pada proses ubah serta hapus data.
 
@@ -114,7 +136,13 @@ Kedua method memiliki nama yang sama tetapi menggunakan parameter yang berbeda s
 
 Abstraction diterapkan dengan menjadikan class `Halte` sebagai abstract class.
 
-[MASUKKAN SCREENSHOT ABSTRACT CLASS HALTE]
+<p align="center">
+  <img width="344" alt="image" src="https://github.com/user-attachments/assets/bfba3a01-9f46-42cd-984e-7929aa390a06" />
+</p>
+
+<p align="center">
+  <img width="272" alt="image" src="https://github.com/user-attachments/assets/3bfd8a96-eb27-460a-998c-e184714ad2f4" />
+</p>
 
 Abstract class `Halte` menyimpan atribut dan method umum yang dimiliki oleh Halte Reguler dan Halte Transit. Objek tidak dibuat secara langsung dari class `Halte`, tetapi melalui subclass `HalteReguler` atau `HalteTransit`.
 
@@ -132,13 +160,13 @@ Abstract method tersebut belum memiliki implementasi pada class `Halte`. Impleme
 
 Nilai tambah pada program diterapkan menggunakan interface `InformasiHalte`.
 
-[MASUKKAN SCREENSHOT INTERFACE INFORMASI HALTE]
+<img width="217" height="46" alt="image" src="https://github.com/user-attachments/assets/73b86d9c-d900-40d7-93a8-0a605ad889d2" />
 
 Interface `InformasiHalte` memiliki method `tampilkanInfo()` dan digunakan sebagai kontrak untuk menampilkan informasi halte.
 
 Interface tersebut diterapkan pada abstract class `Halte` menggunakan `implements InformasiHalte`.
 
-[MASUKKAN SCREENSHOT IMPLEMENTS INFORMASI HALTE]
+<img width="348" height="20" alt="image" src="https://github.com/user-attachments/assets/952846a4-e4ed-481b-99a4-47d6f6ed6535" />
 
 Method `tampilkanInfo()` kemudian dapat digunakan dan di-override kembali oleh `HalteReguler` dan `HalteTransit` untuk menampilkan informasi sesuai dengan jenis haltenya.
 
@@ -148,7 +176,7 @@ Method `tampilkanInfo()` kemudian dapat digunakan dan di-override kembali oleh `
 
 ### Menu Utama
 
-[MASUKKAN SCREENSHOT MENU UTAMA]
+
 
 Menu Utama menampilkan lima pilihan yang dapat digunakan admin untuk mengelola data halte, yaitu tambah, lihat, ubah, hapus data halte, serta keluar dari program.
 
